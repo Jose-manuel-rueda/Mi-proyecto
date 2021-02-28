@@ -177,7 +177,7 @@
         grid-row: 3/4;
     }
     .wrap{
-        margin-top: 250px;
+        margin-top: 190px;
     }
    
     .contenido{
@@ -196,6 +196,7 @@
         padding: 0px;
         display: grid;
         grid-template-columns:1fr;
+        grid-row-gap: 20px;
         
         
     }
@@ -203,7 +204,7 @@
    
     #card{
         margin: 0px auto;
-        width: 70%;
+        width: 90%;
     }
 }   
 @media (max-width:640px){
@@ -222,12 +223,17 @@
         padding-left: 0px;
     }
 }
+@media (max-width:610px){
+    .contenido h1{
+        font-size: 150%;
+    }
+}
 @media (max-width:565px){
     #header{
         height: auto;
         display:grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr  1fr ;
+        grid-template-rows: 1fr  0.5fr ;
     }
     #menu{
         grid-row: 2/3;
@@ -238,9 +244,10 @@
         justify-content:center;
         width: 30%;
         font-size:20px;
+        height: 30px;
     }
     .wrap{
-        margin-top: 250px;
+        margin-top: 150px;
     }
     #logo{
         height: auto;
@@ -310,6 +317,7 @@
         display:flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 5px;
     }
     .grid-main{
         grid-column:1/2;
@@ -326,47 +334,13 @@
         width:100%;
         
     }
+    .wrap{
+        margin-top: 190px;
+    }
     
     
 }
-@media (max-width:390px){
-    aside input[type="text"] {
-        width: 80%;
-    }
-    #card {
-        height: 70px;
-        width: 17%;
-        margin: 1%;
-    }
-    #card .icon {
-        font-size: 20px;
-        line-height: 64px;
-    }
-    #span1 > input[type="text"] {
-        width: 80%;
-    }
-    #boton{
-        width:15%;
-    }
-   
-    #articles h2{
-        font-size: 27px;
-    }
-    #articles article h4 {
-        
-        font-size: 18px;
-        
-    }
+@media (max-width:410px){
+    
 }
     
-@media (max-width:290px){
-    aside input[type="text"] {
-        width: 70%;
-    }
-    #span1 > input[type="text"] {
-        width: 75%;
-    }
-    #boton{
-        width:13%;
-    }
-}    
