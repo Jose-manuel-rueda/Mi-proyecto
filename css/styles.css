@@ -36,36 +36,160 @@
 }
 body{
     background-image: url(../img/pattern.png);
+    width: 100%;
+}
+#barra-2{
+    height: auto;
 }
 .wrap{
     width: 1250px;
     margin: 0px auto;
 }
 /* CABECERA */
+
 #header{
+
+    position:fixed;
+    left: 0px;
+    top: 0;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 2fr;
     width: 100%;
-    height: 70px;
+    height:auto;
     background-color: black;
     color: white;
     font-family: BebasNeue;
 }
+/* 1 cabecera */
+.grid-main{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,2fr) ;
+    grid-column-end: auto;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-items: center;
+
+}
+.site-description a{
+    
+    grid-column:2/3;
+    padding-left: 10px;
+    justify-content:center;
+    align-items: center;
+}
+.site-description img{
+    width: 26px;
+   
+}
+.site-description{
+   
+    
+    margin-top: 10px;
+    width: auto;
+    height: 0px auto;
+    
+}
+
+
 .gear ,.icon{
     
     font-family: WebSymbolRegular;
 }
+.wrap{
+    margin-top: 150px;
+}
+/* SOCIAL */
+
+.icons{
+    font-family: WebSymbolRegular;
+    font-size:26px;
+    
+}
+#social{
+    height: 190px;
+    overflow: hidden;
+}
+#social div{
+    
+    font-size:30px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:black ;
+    overflow: hidden;
+}
+#social div a{
+    font-size:40px;
+    font-weight: normal;
+    color:#1072a7;
+}
+#insta{
+    display: block;
+    width: 30px;
+    margin: -9px auto !important;
+    
+    
+}
+#instaa{
+    height: 100%;
+
+}
+.red{
+    color:red !important;
+    
+}
+.blue{
+    color:#1877f2 !important;
+}
+.blue2{
+    color:#00a2f3 !important;
+
+}
+.overlay{
+    display: block;
+    
+    font-size:30px;
+    
+    transform: translateY(-100%);
+    margin-left: -10px;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    color:#1072a7;
+    position: absolute;
+    transition: all 300ms linear;
+    opacity: 0;
+    
+   
+}
+
+#social div:hover .overlay{
+    
+    opacity:1;
+    text-shadow:0px 0px 1px rgb(119, 118, 118),1px 1px 1px black,0px 0px 1px white,0px 1px black;
+    font-family: BebasNeue;
+    
+    transform:translateY(0%) scale(1.5,1.5);
+    transform:translateX(100%) scale(1.5,1.5)
+    
+}
 #logo{
-    float: left;
+    grid-column: 1/2;
+    grid-row: 1/3;
     width: auto;
     background-color:transparent ;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-left: 20px;
     letter-spacing: 1px;
     cursor: pointer;
     overflow: hidden;
     transition: all 300ms;
     height: auto;
-    border-radius: 40px;
+  
    
     
 
@@ -76,7 +200,7 @@ body{
     float: left;
 
     font-size: 30px;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-left: 26px;
     /* inicio animacion */
     animation-name: rotate-gear;
@@ -88,15 +212,15 @@ body{
     
 }
 #imagen-logo{
-    float: left;
+    
     display: block;
     /* width: 70px; */
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 55px;
+    padding-left: 40px;
+    height:100px;
     margin: 0px auto;
 
 }
+
 @keyframes rotate-gear{
     0% {
         transform: rotateZ(0deg);
@@ -164,10 +288,21 @@ body{
     margin-right: 65px;
 }
 #menu{
-    float: right;
-    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: auto;
     background-color: transparent;
+    transition: all 500ms;
 
+}
+#menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #menu ul li a{
     color: white;
@@ -193,13 +328,14 @@ body{
 }
 /* BANER */
 #baner{
+    /* margin-top: 300px; */
     width: 80%;
     height: 200px;
     border: 10px solid white;
     box-shadow:0px 0px 2px gray;
     background-image: url(../img/c7a7805f-e266-45d8-bf0d-2273c3e1750a.jfif);
     background-position: -70px -360px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     animation: showText 5s linear;
     overflow: hidden;
     
@@ -368,6 +504,40 @@ body{
         color: #2566aa;
         
     }
+}
+.sobre-nosotros{
+    padding-top: 100px;
+    margin-top: 120px auto !important;
+    
+}
+.contenido{
+    
+    margin: 0px auto !important;
+    width: 80%;
+    height: autos;
+    
+}
+.contenido h1{
+    display: flex;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    font-family:BebasNeue;
+    font-size: 50px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    color:#1F3CEA ;
+    text-shadow: 0px 0px 2px black;
+    margin: 50px;
+}
+.contenido p{
+    margin: 30px auto;
+    width: 80%;
+    height: auto;
+    font-family: TrebuchetMS;
+    
+    color:#30302F;
+
 }
 #imagen-pintura img{
     width:100%;
