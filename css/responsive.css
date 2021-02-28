@@ -9,10 +9,10 @@
         text-align: center;
 
     }
-    #card{
+    /* #card{
         width: 17%;
         margin: 1.2%;
-    }
+    } */
     #card p{
         display: block;
         width: 90%;
@@ -44,7 +44,7 @@
         width: 95%;
     }
     #footer{
-        height: 820px;
+        height: auto;
     }
     #footer .wrap > div{
         width: 40%;
@@ -87,7 +87,7 @@
 }
 @media (max-width:889px){
     #footer{
-        height: 1260px;
+        height: auto;
     }
     #footer .wrap > div{
         width: 90%;

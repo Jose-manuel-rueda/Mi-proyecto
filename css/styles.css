@@ -56,7 +56,7 @@ body{
 #logo{
     float: left;
     width: auto;
-    background-color:white ;
+    background-color:transparent ;
     text-align: center;
     margin-top: 8px;
     margin-left: 20px;
@@ -193,14 +193,14 @@ body{
 }
 /* BANER */
 #baner{
-    width: 95.5%;
-    height: 100px;
+    width: 80%;
+    height: 200px;
     border: 10px solid white;
     box-shadow:0px 0px 2px gray;
-    background-image: url(../img/bakbaner.png);
-    background-position: -300px -200px;
+    background-image: url(../img/c7a7805f-e266-45d8-bf0d-2273c3e1750a.jfif);
+    background-position: -70px -360px;
     margin: 20px auto;
-    animation: showText 15s linear;
+    animation: showText 5s linear;
     overflow: hidden;
     
     
@@ -208,30 +208,31 @@ body{
 }
 @keyframes showText{
     0% {
-        background-position: 0px 0px;
+        background-position: -70px -60px;
     }
     100% {
-        background-position: -300px -200px;
+        background-position: -70px -360px;
     }
 }
 #baner h1{
     display: block;
-    width: 1000px;
+    width: 800px;
     font-family: BebasNeue;
     color: white;
-    font-size: 45px;
-    letter-spacing: 2px;
-    margin: 27px auto;
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin: 38px auto;
+    margin-left: 6%;
     font-weight: normal;
     text-shadow: 2px 2px 1px black;
     text-transform: uppercase;
     
-    animation: showText2 10s linear;
+    animation: showText2 5s linear;
     
 }
 @keyframes showText2{
     0%{
-        transform: translateX(-300%) scale(5.5);
+        transform: translateX(-200%) scale(5.5);
         
     }   
     /* 25%{
@@ -241,7 +242,7 @@ body{
     }    */
     50%{
        
-        transform: translateX(300%) scale(3.5);
+        transform: translateX(200%) scale(3.5);
         color: rgba(255, 255, 255, 0.508);
        
         
@@ -250,7 +251,7 @@ body{
     }   
     75%{
         
-        transform: translateX(-200%) scale(2.1);
+        transform: translateX(-100%) scale(2.1);
         opacity: 0;
         color: white;
         
@@ -265,9 +266,16 @@ body{
     }   
 }    
 /* CAJAS DE TARGETAS */
-
+#cards{
+    width: 0px auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    
+    grid-gap: 12px;
+}
 #card{
-    width: 16.5%;
+    
+    /* width: 25%; */
     height: 305px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 2px #ddd;
@@ -728,7 +736,7 @@ aside input[type='submit']{
 }
 #footer{
     width: 100%;
-    height: 470px;
+    height: auto;
     background-color: black;
     color:white;
     overflow: hidden;
@@ -809,7 +817,15 @@ aside input[type='submit']{
     transform: scale(1.5);
     
 }
-
+#autor{
+    height: auto !important;
+}
+#optimizado{
+    height: auto  !important;
+}
+#menu_footer{
+    height: auto !important;
+}
 
 
 
