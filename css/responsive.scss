@@ -227,6 +227,9 @@
     }
 }
 @media (max-width:565px){
+    .wrap {
+        margin-top: 15px !important;
+    }
     #header{
         height: auto;
         display:grid;
@@ -339,7 +342,7 @@
 }
 @media (max-width:410px){
     #info ul li{
-        font-size: 18px;
+        font-size: 20px;
     }
     #info{
         margin-bottom: 20px;
