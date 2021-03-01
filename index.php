@@ -178,23 +178,23 @@
         </div>
     </div>
     <section id="formulario">
-        <form action="pag.php" method="post" enctype="text/plain">
+        <form action="pag.php" method='POST' >
             <div class="contenido">
                 <h1>Contacta con nosotros</h1>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Numero de telefono</label>
-                <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+                <label for="telefono" class="form-label">Numero de telefono</label>
+                <input type="number" class="form-control" name='telefono' id="telefono" placeholder="Telefono">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nombre@ejemplo.com">
+                <label for="email" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" name='email' id="email" placeholder="nombre@ejemplo.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="asunto" class="form-label">Asunto</label>
+                <textarea class="form-control" name='asunto' id="asunto" rows="3"></textarea>
             </div>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <input class="btn btn-primary" type="submit"></input>
         </form>
     </section>
     <!-- INICIO DEL FOOTER -->
