@@ -936,10 +936,6 @@ body {
     height: 30px;
   }
 
-  .wrap {
-    margin-top: 150px;
-  }
-
   #logo {
     height: auto;
     grid-column: 1/2;
@@ -1027,10 +1023,6 @@ body {
   #menu ul li {
     font-size: 13px;
     width: 100%;
-  }
-
-  .wrap {
-    margin-top: 190px;
   }
 }
 @media (max-width: 410px) {
