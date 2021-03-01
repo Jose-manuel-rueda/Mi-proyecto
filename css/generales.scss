@@ -108,7 +108,7 @@ body{
 
 .icons{
     font-family: WebSymbolRegular;
-    font-size:26px;
+    font-size:33px;
     
 }
 #social{
@@ -416,51 +416,67 @@ body{
 
 .wasap{
     display: grid;
-    grid-template-columns: repeat(9,1fr)2fr;
+    grid-template-columns: 15%;
+    grid-template-rows: repeat(4,1fr);
     /* grid-template-rows: repeat(10,1fr); */
-    width: 100%;
-    height: 1400px;
+    width: 50%;
+    height:200px;
     position: fixed;
-    
-    margin-top: 24em;
+    grid-row-gap: 10px;
+    margin-top:5em;
    
     /* transform: translateX(1%); */
 
 }
-.wasap p{
-    padding: 10px;
-    margin-right: 20px;
-    width:120px;
-    float: left;
-    opacity: 0;
-    background-color: #33B16E;
-    color: white;
-    border-radius: 20px 20px 20px 0px;
-    border: 8px solid white;
-    text-transform: uppercase;
+#twiter img{
+    width: 50px;
 }
-.wasap:hover p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    opacity: 1;
-    font-size: 16px;
+#twiter{
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
-.wasap a img{
-    padding-top: 15px;
+#facebook{
+    width: 50px;
     display: flex;
-    float: left;
     justify-content: center;
     align-items: center;
-   
-    width: 60px !important;
 }
-.wasap a{
-    display:block;
-    padding-right: 10px;
-    text-decoration: none !important;
-    grid-column:10/11 !important;
-    /* grid-row:2/3 !important; */
-    width: 250px !important;
+#facebook img{
+    width: 40px!important;
+    padding-left: 3px;
+    
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
+#youtube{
+    width: 50px;
+}
+#youtube img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px !important;
+    
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#wasapp{
+    // width: 70px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    
+}
+// .iconos img{
+//     padding: 0px !important;
+//     margin: 0px auto !important
+//     // width: none !important;
+//     // height: 70px !important;
+// }
+#wasapp img{
+    width: 50px;
+}
+
 .wrap {
     margin-top: 15px;
 }
