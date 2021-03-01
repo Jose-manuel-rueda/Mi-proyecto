@@ -151,7 +151,9 @@
     .icon{
         font-size:40px
     }
-    
+    #card{
+        /* height:145px */
+    }
     .category{
         width: 95%;
         font-size: 14px;
