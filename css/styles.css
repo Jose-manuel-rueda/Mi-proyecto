@@ -1029,5 +1029,10 @@ body {
     margin-top: 190px;
   }
 }
+@media (max-width: 410px) {
+  #info ul li {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
