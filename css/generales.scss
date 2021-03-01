@@ -27,14 +27,15 @@
 *{
     margin: 0px auto;
     padding: 0px auto;
-    list-style: none;
-    text-decoration: none;
+    list-style: none !important;
+    text-decoration: none !important;
 }
 .clearfix{
     float: none;
     clear: both;
 }
 body{
+    text-decoration: none !important;
     background-image: url(../img/pattern.png);
     width: 100%;
 }
@@ -42,6 +43,7 @@ body{
     height: auto;
 }
 .wrap{
+    text-decoration: none !important;
     width: 1250px;
     margin: 0px auto;
 }
@@ -312,6 +314,7 @@ body{
     color: white;
     display: block;
     transition: all 200ms;
+    text-decoration: none !important;
    
 
 }
@@ -453,7 +456,7 @@ body{
 .wasap a{
     display:none;
     padding-right: 20px;
-    
+    text-decoration: none !important;
     grid-column:10/11 !important;
     /* grid-row:2/3 !important; */
     width: 240px !important;
@@ -632,6 +635,7 @@ body{
     font-family: TrebuchetMS;
 }
 #footer a{
+    text-decoration: none !important;
     color: #37bcf9;
     transition: all 300ms;
 }
