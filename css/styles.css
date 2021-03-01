@@ -406,17 +406,69 @@ body{
         
     }   
 }    
+/* boton wasap */
+
+.wasap{
+    display: grid;
+    grid-template-columns: repeat(9,1fr)2fr;
+    /* grid-template-rows: repeat(10,1fr); */
+    width: 100%;
+    height: 1400px;
+    position: fixed;
+    
+    margin-top: 28em;
+   
+    /* transform: translateX(1%); */
+
+}
+.wasap p{
+    padding: 10px;
+    margin-right: 20px;
+    width:80px;
+    float: left;
+    opacity: 0;
+    background-color: #33B16E;
+    color: white;
+    border-radius: 20px 20px 20px 0px;
+    border: 8px solid white;
+    text-transform: uppercase;
+}
+.wasap:hover p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 1;
+    font-size: 16px;
+}
+.wasap a img{
+    padding-top: 15px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+   
+    width: 60px !important;
+}
+.wasap a{
+    display:block;
+    padding-right: 20px;
+    
+    grid-column:10/11 !important;
+    /* grid-row:2/3 !important; */
+    width: 200px !important;
+}
+
+
 /* CAJAS DE TARGETAS */
 #cards{
+    margin-top: 20px;
     width: 0px auto;
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    
+    grid-column-gap: 20px;
     
 }
 #card{
     
-    width: 100%;
+    width:80%;
     height: auto;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 2px #ddd;
@@ -424,7 +476,7 @@ body{
     display: block;
     float: left;
     background-color: white;
-    margin:20px;
+    
     margin-top: 40px;
     cursor: pointer;
     transition: all 400ms;
