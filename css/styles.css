@@ -412,7 +412,7 @@ body {
 }
 
 .wasap a {
-  display: none;
+  display: block;
   padding-right: 20px;
   text-decoration: none !important;
   grid-column: 10/11 !important;
