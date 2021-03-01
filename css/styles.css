@@ -546,7 +546,9 @@ body {
   letter-spacing: 2px;
   color: #1F3CEA;
   text-shadow: 0px 0px 2px black;
-  margin: 50px;
+  margin: 0px auto;
+  text-align: center;
+  width: 200px;
 }
 
 .contenido p {
