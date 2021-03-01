@@ -420,6 +420,10 @@ body {
   width: 250px !important;
 }
 
+.wrap {
+  margin-top: 15px;
+}
+
 /* CAJAS DE TARGETAS */
 #cards {
   margin-top: 20px;
@@ -862,7 +866,7 @@ body {
   }
 
   .wrap {
-    margin-top: 190px;
+    margin-top: 15px;
   }
 
   .contenido {
