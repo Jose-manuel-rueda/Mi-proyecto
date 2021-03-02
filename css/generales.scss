@@ -597,9 +597,9 @@ body{
 }
 .contenido{
     
-    margin: 0px auto !important;
+    margin-bottom: 32px !important;
     width: 80%;
-    height: autos;
+    height: auto;
     
 }
 .contenido h1{
@@ -730,7 +730,9 @@ body{
 #menu_footer{
     height: auto !important;
 }
-
+#contenido h1{
+    margin-bottom: 20px;
+}
 
 
 
