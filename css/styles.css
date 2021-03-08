@@ -381,7 +381,6 @@ body {
 }
 
 #twiter img {
-  padding-left: 5px;
   margin-bottom: -10px !important;
   width: 50px;
 }
@@ -401,7 +400,6 @@ body {
 
 #facebook img {
   width: 35px !important;
-  padding-left: 3px;
   grid-column: 1/2;
   grid-row: 2/3;
 }
