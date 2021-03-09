@@ -9,7 +9,7 @@ $header .= 'X_Mailer: PHP/' . phpversion() . " \r\n";
 $header .= 'Mime-Version: 1.0' . " \r\n";
 $header .= "Content-Type: text/plain";
 
-$message = "Este mensage ue enviado por: " . $email . "\r\n";
+$message = "Este mensage fue enviado por: " . $email . "\r\n";
 $message .= "Su telefono es: " . $numero_tel . "\r\n";
 $message .= "Asunto: " . $_POST['asunto'] . "\r\n";
 $message .= "Enviado el: " . date('d-m-Y', time());
@@ -22,4 +22,3 @@ mail($para, $asunto, utf8_decode($message), $header);
 
 header('Location:index.html');
 ?>
-jj

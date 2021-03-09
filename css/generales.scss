@@ -131,13 +131,13 @@ body{
     font-weight: normal;
     color:#1072a7;
 }
-#insta{
-    display: block;
-    width: 30px;
-    margin: -9px auto !important;
+// #insta{
+//     display: block;
+//     width: 30px;
+//     margin: -9px auto !important;
     
     
-}
+// }
 #instaa{
     height: 100%;
 
@@ -419,19 +419,22 @@ body{
     grid-template-columns: 15%;
     grid-template-rows: repeat(4,1fr);
     /* grid-template-rows: repeat(10,1fr); */
-    width: 50%;
-    height:200px;
+    width: auto;
+    height:auto;
+    padding-left: 10px;
     position: fixed;
     grid-row-gap: 10px;
-    margin-top:5em;
+    margin-top:2em;
    
     /* transform: translateX(1%); */
 
 }
 #twiter img{
+    margin-bottom: -10px !important;
     width: 50px;
 }
 #twiter{
+    margin: 0px auto;
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -442,8 +445,8 @@ body{
     align-items: center;
 }
 #facebook img{
-    width: 40px!important;
-    padding-left: 3px;
+    width: 35px!important;
+    // padding-left: 3px;
     
     grid-column: 1/2;
     grid-row: 2/3;
@@ -602,7 +605,7 @@ body{
     height: auto;
     
 }
-.contenido h1{
+.contenido h2{
     display: flex;
     border-bottom: 1px solid gray;
     align-items: center;
