@@ -11,17 +11,6 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-    <!-- <urlset
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"> -->
-        <!--
-         created with Free Online Sitemap Generator www.xml-sitemaps.com 
-        -->
-        
-        <!-- <url>
-            <loc>https://www.undergroundgarage.es/</loc>
-            <lastmod>2021-03-08T23:04:22+00:00</lastmod>
-        </url>
-    </urlset> -->
 
 </head>
 
@@ -53,37 +42,16 @@
                     alt="">
             </a>
         </div>
-
-
-
-
         <div class='iconos' id='facebook'>
             <a href="https://www.facebook.com/gabriel.ruedamartinez" class="icons blue icono"><img
                     src="img/584ac2d03ac3a570f94a666d.png" alt=""></img></a>
 
         </div>
-
-
-
         <div class='iconos' id='youtube'>
-            <a href="https://www.youtube.com/channel/UCf2e80fYsMbtwfEe6sQNXwQ" class="icons red icono"><img
-                    src="img/youtube.png" alt=""></img></a>
-
-        </div>
-
-
-
-        <div class='iconos' id="wasapp">
             <a href=" https://api.whatsapp.com/send?phone=34644640264" class='icono'>
                 <img src="img/whatsapp.png" alt="">
             </a>
         </div>
-
-
-
-
-
-
     </div>
     <section class="wrap">
         <section id="info">
@@ -95,11 +63,14 @@
             <!-- INICIO TARGETAS -->
             <div id="cards">
                 <div id="card">
-                    <p class='icon'><img src="img/iconos card/pintura-horno.png" alt=""></p>
-                    <h2 class="category">Trabajo de chapa y pintura</h2>
-                    <p class='description'>Underground Garage cumple con los requisitos más exigentes para poder ofrecer
-                        la máxima garantía de calidad.
-                    </p>
+                    <a style="display: block;" href="#sobre-nosotros">
+                        <p class='icon'><img src="img/iconos card/pintura-horno.png" alt=""></p>
+                        <h2 class="category">Trabajo de chapa y pintura</h2>
+                        <p class='description'>Underground Garage cumple con los requisitos más exigentes para poder
+                            ofrecer
+                            la máxima garantía de calidad.
+                        </p>
+                    </a>
                 </div>
                 <div id="card">
                     <a href="">
@@ -137,7 +108,7 @@
     </div>
         <!-- SOBRE NOSOTROS -->
     <section id="formulario">
-        <form name='Contact' data-netlif="true" netlify>
+        <form action="pag.php" method="POST" name='Contact'>
             <div class="contenido">
                 <h1>Contacta con nosotros</h1>
             </div>
@@ -153,7 +124,7 @@
                 <label for="asunto" class="form-label">Asunto</label>
                 <textarea class="form-control" name='asunto' id="asunto" rows="3"></textarea>
             </div>
-            <a href='' class="btn btn-primary" type="submit">Enviar</a>
+            <input class="btn btn-primary" type="submit"></input>
         </form>
     </section>
     <!-- INICIO DEL FOOTER -->
