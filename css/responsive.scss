@@ -1,14 +1,14 @@
 @media (max-width:1250px){
     .wrap{
-        width: 90%;
+        width: 100%;
         
     }
-    #baner h1{
-        width: 100%;
+    // #baner h1{
+    //     width: 100%;
         
         
 
-    }
+    // }
     /* #card{
         width: 17%;
         margin: 1.2%;
@@ -102,6 +102,8 @@
     
 }
 @media (max-width:895px){
+   
+  
     #login input[type="email"], #login input[type="password"]{
     width: 70%;
     }
@@ -112,12 +114,13 @@
 @media (max-width:850px){
     #baner{
         width:90%; 
+        height: 150px !important;
         /* margin-left:-10px; */
     }
     #baner h1{
         padding: 0px;
         margin: 0px auto ;
-        width: 95%;
+        width: 80%;
         line-height:120px;
         text-align: center;
         font-size: 50px;
@@ -134,9 +137,9 @@
     }
 }
 @media (max-width:769px){
-    #header{
-        height: 130px;
-    }
+    // #header{
+    //     height: 130px;
+    // }
     #menu{
         width: 100%;
     }
@@ -164,12 +167,12 @@
     }
 }
 @media (max-width:710px){
-    #header{
-        height: auto;
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows: 1fr 0.5fr;
-    }
+    // #header{
+    //     height: auto;
+    //     display:grid;
+    //     grid-template-columns:1fr;
+    //     grid-template-rows: 1fr 0.5fr;
+    // }
     #logo{
         display: grid;
         justify-content: center;
@@ -194,10 +197,7 @@
         margin-top: 15px;
     }
    
-    .contenido{
-        
-        margin-top: 120px  !important;
-    }
+    
    
     #menu ul {
         
@@ -222,6 +222,9 @@
     }
 }   
 @media (max-width:640px){
+    .titulos{
+        font-size: 30px !important;
+    }
    
     .category{
         width: 80%;
@@ -243,6 +246,11 @@
     }
 }
 @media (max-width:565px){
+    #baner{
+        width:80%; 
+        height: 100px !important;
+        /* margin-left:-10px; */
+    }
     .wrap {
         margin-top: 15px !important;
     }
@@ -255,6 +263,7 @@
     // #menu{
     //     grid-row: 2/3;
     // }
+
     #menu ul li{
         display: flex;
         align-items: center;
@@ -282,14 +291,7 @@
 }
 
 @media (max-width:540px){
-    #baner{
-        line-height: 25px;
-        height: 120px;
-    }
-    #baner h1{
-        font-size: 25px;
-    }
-    
+   
     #span1 > input[type="text"] {
         width: 85%;
     }

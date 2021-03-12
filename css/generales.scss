@@ -42,6 +42,9 @@ body{
 #barra-2{
     height: auto;
 }
+// #info{
+//     margin-top: 100px;
+// }
 .wrap{
     text-decoration: none !important;
     width: 1250px;
@@ -49,22 +52,22 @@ body{
 }
 /* CABECERA */
 
-#header{
+// #header{
 
-    position: -webkit-sticky;
-    position: sticky;
+//     position: -webkit-sticky;
+//     position: sticky;
  
-    left: 0px;
-    top: 0;
-    display:grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr 2fr;
-    width: 100%;
-    height:auto;
-    background-color: black;
-    color: white;
-    font-family: BebasNeue;
-}
+//     left: 0px;
+//     top: 0;
+//     display:grid;
+//     grid-template-columns: 40% 60%;
+//     grid-template-rows: 1fr 2fr;
+//     width: 100%;
+//     height:auto;
+//     background-color: black;
+//     color: white;
+//     font-family: BebasNeue;
+// }
 /* 1 cabecera */
 .grid-main{
     display:grid;
@@ -336,16 +339,17 @@ body{
 }
 /* BANER */
 #baner{
-    /* margin-top: 300px; */
-    width: 90%;
-    height: 240px;
+    margin-top: 80px;
+    width: 93.5%;
+    height: 250px;
     border: 10px solid white;
     box-shadow:0px 0px 2px gray;
-    background-image: url(../img/c7a7805f-e266-45d8-bf0d-2273c3e1750a.jfif);
     /* background-position: -70px -360px; */
     background-position: center;
+    background-image: url(../img/logo_undergrondgarage/logopeq.jpg) ;
+    
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 50%;
     /* margin: 20px auto; */
     animation: showText 5s linear;
     overflow: hidden;
@@ -362,8 +366,10 @@ body{
     }
 } */
 #baner h1{
-    display: block;
-    width: 800px;
+    background-color: white;
+    display: none;
+    width: 80% !important;
+    height: auto;
     font-family: BebasNeue;
     color: white;
     font-size: 70px;
@@ -424,7 +430,7 @@ body{
     padding-left: 10px;
     position: fixed;
     grid-row-gap: 10px;
-    margin-top:2em;
+    // margin-top:em;
    
     /* transform: translateX(1%); */
 
@@ -594,7 +600,7 @@ body{
     }
 }
 .sobre-nosotros{
-    padding-top: 100px;
+    padding-top: 50px;
     margin-top: 120px auto !important;
     
 }

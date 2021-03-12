@@ -10,38 +10,48 @@
     <link rel="icon" type="favicon/x-icon" href="img/logo_undergrondgarage/logo_UG_BLANCO.png" style="width: 150px;">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-        <!--
-         created with Free Online Sitemap Generator www.xml-sitemaps.com 
-        -->
-        <url>
-        <loc>https://www.undergroundgarage.es/</loc>
-        <lastmod>2021-03-08T23:04:22+00:00</lastmod>
-        </url>
-    </urlset>
+
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
 </head>
 
 <body>
     <!-- INICIO DE CABECERA ----->
+    <input type="checkbox" id="btn-nav" class="checkbox">
     <header id="header">
-        <div id="logo">
+        <div class="header-container"><strong id="menu2"> MENU</strong>
+            <!-- <img class="header-logo" src="" alt="">MENU</img> -->
+            <label for="btn-nav" class="btn-label">
+                <div class="header-button"></div>
+            </label>
+        </div>
+        <div class="clearfix"></div>
+        <!-- <div id="logo">
             <span class="gear">S</span>
             <img id='imagen-logo' src="img/logo_undergrondgarage/logo_blanco_2.png" alt="">
         </div>
-        <!-- <div class="clearfix"></div> -->
+        
         <nav id="menu">
             <ul>
 
                 <li><a href="">INICIO</a></li>
                 <li><a href="#sobre-nosotros">NOSOTROS</a></li>
-                <!-- <li><a href="">BLOG</a></li>
-                <li><a href="">FORMACION</a></li> -->
+                <li><a href="">OCASION</a></li>
+               <li><a href="">FORMACION</a></li>
                 <li><a href="#formulario">CONTACTO</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
+    <nav class="menu">
+        <ul>
+
+            <li><a href="">INICIO</a></li>
+            <li><a href="#sobre-nosotros">NOSOTROS</a></li>
+            <li><a href="">VEHICULOS DE OCASION</a></li>
+            <!-- <li><a href="">FORMACION</a></li> -->
+            <li><a href="#formulario">CONTACTO</a></li>
+        </ul>
+    </nav>
     <!-- FIN DE LA CABECERA -------->
     <div class="wasap">
         <div class='iconos' id="twiter">
@@ -85,8 +95,10 @@
                     <a href="">
                         <p class='icon'><img src="img/iconos card/ensamblaje.png" alt=""></p>
                         <h2 class="category">Mecánica en general</h2>
-                        <p class='description'>Diagnóstico y reparación de averías generadas en cualquiera de las diferentes
-                            partes del automóvil: motor, sistema de suspensión , dirección , frenado, transmisión, etc.</p>
+                        <p class='description'>Diagnóstico y reparación de averías generadas en cualquiera de las
+                            diferentes
+                            partes del automóvil: motor, sistema de suspensión , dirección , frenado, transmisión, etc.
+                        </p>
                     </a>
                 </div>
                 <div id="card">
@@ -105,21 +117,25 @@
     <!-- SOBRE NOSOTROS -->
     <div class=" sobre-nosotros" id="sobre-nosotros">
         <div class="contenido">
-            <h2>TU TALLER DE CHAPA Y PINTURA EN GRANADA</h2>
+            <h2 class="titulos">TU TALLER DE CHAPA Y PINTURA EN GRANADA</h2>
             <p><strong>Underground Garage</strong> cumple con los requisitos más exigentes para poder ofrecer
                 la máxima garantía de calidad. Llevamos trabajando en este sector más de 15
                 años para ofrecerles el mejor servicio a nuestros clientes.</p>
-            </div>
-            <div id="imagen-pintura">
-                <img src="img/imagenes de talleres/chapa-y-pintura.jpg" alt="">
-            </div>
+        </div>
+        <div id="imagen-pintura">
+            <img src="img/imagenes de talleres/chapa-y-pintura.jpg" alt="">
         </div>
     </div>
-        <!-- SOBRE NOSOTROS -->
+    </div>
+    <!--FIN SOBRE NOSOTROS -->
+
+
+
+    <!-- CONTACTO -->
     <section id="formulario">
         <form action="pag.php" method="POST" name='Contact'>
             <div class="contenido">
-                <h1>Contacta con nosotros</h1>
+                <h2 class="titulos">Contacta con nosotros</h2>
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Numero de telefono</label>
@@ -136,6 +152,7 @@
             <input class="btn btn-primary" type="submit"></input>
         </form>
     </section>
+    <!--FIN CONTACTO -->
     <!-- INICIO DEL FOOTER -->
     <div class="clearfix"></div>
     <footer id="footer">
@@ -144,16 +161,17 @@
                 <h5>MENU</h5>
                 <ul>
                     <li><a href="">INICIO</a></li>
+
                     <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+                    <li><a href="">OCASION</a></li>
                     <li><a href="#formulario">CONTACTO</a></li>
                 </ul>
             </div>
             <div id="location">
                 <h5>¿Donde estamos?</h5>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3176.863297086594!2d-3.642246!3d37.22722!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1614549505921!5m2!1ses!2ses"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d794.2155538829254!2d-3.642441974087421!3d37.2272456731262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fdd5c59869e5%3A0x86fddd26edb41162!2sOcasion%20Bike!5e0!3m2!1ses!2ses!4v1615575224745!5m2!1ses!2ses"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <div id="info">
@@ -194,10 +212,7 @@
         gtag('js', new Date());
         gtag('config', 'G-05ST44EKLR');
     </script>
-    <script>
-        var myCarousel = document.querySelector('#myCarousel')
-        var carousel = new bootstrap.Carousel(myCarousel)
-    </script>
+
     <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="bootstrap/css/bootstrap.min.css"></script>
 </body>
