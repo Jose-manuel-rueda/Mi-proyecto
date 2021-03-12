@@ -7,7 +7,7 @@
 }
 
 #c3{
-   
+    
     width: 100%;
     margin: 0px auto;
     display: grid;
@@ -22,8 +22,12 @@
         transform: scale(2);
     }
     h4{
+        text-align: center;
         margin: 20px;
         font-weight: bold;
         grid-column: 1/6;
+        p{
+            text-align: start;
+        }
     }
 }

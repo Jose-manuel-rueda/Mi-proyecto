@@ -59,7 +59,7 @@ header{
     height: 16rem;
     position: fixed;
     z-index: 9;
-    top: -20rem;
+    top: -19rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,6 +71,7 @@ header{
         li{
             margin: 0.5rem;
             a{
+                font-size: 20px;
                 margin: 0.1rem;
                 color: #000;
                 text-decoration: none;

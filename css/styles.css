@@ -41,6 +41,10 @@ body {
   height: auto;
 }
 
+.ancho {
+  width: 50% !important;
+}
+
 .wrap {
   text-decoration: none !important;
   width: 1250px;
@@ -733,7 +737,7 @@ header {
   height: 16rem;
   position: fixed;
   z-index: 9;
-  top: -20rem;
+  top: -19rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -748,6 +752,7 @@ header {
   margin: 0.5rem;
 }
 .menu ul li a {
+  font-size: 20px;
   margin: 0.1rem;
   color: #000;
   text-decoration: none;
@@ -805,9 +810,13 @@ header {
   transform: scale(2);
 }
 #c3 h4 {
+  text-align: center;
   margin: 20px;
   font-weight: bold;
   grid-column: 1/6;
+}
+#c3 h4 p {
+  text-align: start;
 }
 
 #formulario {
