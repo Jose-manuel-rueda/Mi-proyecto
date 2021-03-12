@@ -68,6 +68,25 @@
     #card .description{
         font-size:13px;
     }
+    #c3{
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 2fr 2fr;
+        img{
+            width: 95%;
+            height: 300px;
+            border-radius: 20px;
+        }
+        img:hover{
+            transform: scale(1.5);
+        }
+        h4{
+            margin: 20px;
+            font-weight: bold;
+            grid-column: 1/4;
+        }
+    }
    
 }
 @media (max-width:988px){
@@ -164,6 +183,28 @@
     #card:hover .icon {
         
         font-size: 40px;
+    }
+    #c3{
+        margin: 0px auto;
+        display: block;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr repeat(5,1fr) !important;
+        h4{
+            text-align: center;
+        }
+        img{
+            display: flex;
+            // margin: 0px auto !important;
+            width: 80%;
+            height: auto;
+            align-items: center;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        img:hover{
+            transform: scale(1);
+        }
+      
     }
 }
 @media (max-width:710px){
