@@ -1,12 +1,206 @@
+<?php
+session_start(); 
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pruebas</title>
+    <title>UndergroundGarage</title>
+    <link rel="icon" type="favicon/x-icon" href="img/logo_undergrondgarage/logo_UG_BLANCO.png" style="width: 150px;">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
 </head>
+
 <body>
-    <h1>hola</h1>
+    <!-- INICIO DE CABECERA ----->
+    <input type="checkbox" id="btn-nav" class="checkbox">
+    <header id="header">
+        <div class="header-container"><strong id="menu2"> MENU</strong>
+            <!-- <img class="header-logo" src="" alt="">MENU</img> -->
+            <label for="btn-nav" class="btn-label">
+                <div class="header-button"></div>
+            </label>
+        </div>
+        <div class="clearfix"></div>
+        <!-- <div id="logo">
+            <span class="gear">S</span>
+            <img id='imagen-logo' src="img/logo_undergrondgarage/logo_blanco_2.png" alt="">
+        </div>
+        
+        <nav id="menu">
+            <ul>
+
+                <li><a href="">INICIO</a></li>
+                <li><a href="#sobre-nosotros">NOSOTROS</a></li>
+                <li><a href="">OCASION</a></li>
+               <li><a href="">FORMACION</a></li>
+                <li><a href="#formulario">CONTACTO</a></li>
+            </ul>
+        </nav> -->s
+    </header>
+    <nav class="menu">
+        <ul>
+
+            <li><a href="">INICIO</a></li>
+            <li><a href="#sobre-nosotros">NOSOTROS</a></li>
+            <li><a href="#vehiculos-ocasion">VEHICULOS DE OCASION</a></li>
+            <li><a href="efectos.html">Prueba</a></li>
+            <li><a href="#formulario">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!-- FIN DE LA CABECERA -------->
+    <div class="wasap">
+        <div class='iconos' id="twiter">
+            <a href="https://www.instagram.com/undergroundgaragegaby/" class='icono'>
+                <img id="insta"
+                    src="img/kisspng-computer-icons-logo-instagram-blog-akita-5b2ffdee6d0502.8875915015298718544466.png"
+                    alt="">
+            </a>
+        </div>
+        <div class='iconos' id='facebook'>
+            <a href="https://www.facebook.com/gabriel.ruedamartinez" class="icons blue icono"><img
+                    src="img/584ac2d03ac3a570f94a666d.png" alt=""></img></a>
+
+        </div>
+        <div class='iconos' id='youtube'>
+            <a href=" https://api.whatsapp.com/send?phone=34644640264" class='icono'>
+                <img src="img/whatsapp.png" alt="">
+            </a>
+        </div>
+    </div>
+    <section class="wrap">
+        <section id="info">
+            <!-- INICIO BANER -->
+            <div id="baner">
+                <h1>UNDERGROUNd GARAGE</h1>
+            </div>
+            <!-- FIN BANER -->
+            
+        </section>
+        <div class="clearfix"></div>
+    </section>
+   
+
+    <!-- VEHICULOS DE OCASION -->
+
+
+    <div id="vehiculos-ocasion" class="vehiculos-ocasion">
+        <div class="contenido">
+            <h2 class="titulos">VEHICULOS DE OCASION</h2>
+            <div id="c3">
+                <h4>CITROEN - C3 <p>Se vende coche muy funcional, perfecto para utilizar en ciudad. Chapa y tapicería en perfecto estado, color Azul, kilometros: 129736. Para más información, contactar sin problema.  </p></h4>
+                <img src="img/vehiculos-ocasion/c3/img1.jpeg" alt="">
+                <img src="img/vehiculos-ocasion/c3/img2.jpeg" alt="">
+                <img src="img/vehiculos-ocasion/c3/img3.jpeg" alt="">
+                <img src="img/vehiculos-ocasion/c3/img4.jpeg" alt="">
+                <img src="img/vehiculos-ocasion/c3/img5.jpeg" alt="">
+            </div>
+            <div id="c3">
+                <h4>Xciting 400i ABS<p>Moto de ocasión en perfecto estado, totalmente revisada.Para mas informacion no dudes en contactarnos.</p></h4>
+                <img src="img/vehiculos-ocasion/Xciting/WhatsApp Image 2021-03-17 at 18.20.09.jpeg" alt="">
+                <img src="img/vehiculos-ocasion/Xciting/WhatsApp Image 2021-03-17 at 18.20.12 (1).jpeg" alt="">
+                <img src="img/vehiculos-ocasion/Xciting/WhatsApp Image 2021-03-17 at 18.20.12 (2).jpeg" alt="">
+                <img src="img/vehiculos-ocasion/Xciting/WhatsApp Image 2021-03-17 at 18.20.12.jpeg" alt="">
+      
+            </div>
+        </div>
+       
+    </div>
+    <!-- FIN VEHICULOS DE OCASION -->
+
+    <!-- CONTACTO -->
+    <section id="formulario">
+        <form action="pag.php" method="POST" name='Contact'>
+            <div class="contenido">
+                <h2 class="titulos">Contacta con nosotros</h2>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Numero de telefono</label>
+                <input type="number" class="form-control" name='telefono' id="telefono" placeholder="Telefono">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" name='email' id="email" placeholder="nombre@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <textarea class="form-control" name='asunto' id="asunto" rows="3"></textarea>
+            </div>
+            <input class="btn btn-primary" type="submit"></input>
+        </form>
+    </section>
+    <!--FIN CONTACTO -->
+    <!-- INICIO DEL FOOTER -->
+    <div class="clearfix"></div>
+    <footer id="footer">
+        <div class='wrap'>
+            <div id="menu_footer">
+                <h5>MENU</h5>
+                <ul>
+                    <li><a href="">INICIO</a></li>
+
+                    <li><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
+                    <li><a href="#vehiculos-ocasion">VEHICULOS DE OCASION</a></li>
+                    <li><a href="#formulario">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div id="location">
+                <h5>¿Donde estamos?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.863297934931!2d-3.644434684698024!3d37.227219979862824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fd8f49150a3b%3A0xfebb81e3b175ee39!2sUnderground%20garage!5e0!3m2!1sen!2ses!4v1615591543558!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+                
+            </div>
+
+            <div id="info">
+                <h5>Direccion</h5>
+                <p>
+                <ul>
+                    <li>Calle baza 12 h</li>
+                    <li>Albolote 18220 polígono juncaril</li>
+                    <li>Granada</li>
+                    <li>Tlf 644640264</li>
+                    <li>Horario de mañanas 9:00 a 14:00</li>
+                    <li>Horario de tarde 15:00 a 18:00</li>
+                </ul>
+                </p>
+            </div>
+            <div id="optimizado">
+                <h5>Siguenos</h5>
+                <p>
+                    <a href="https://www.facebook.com/gabriel.ruedamartinez"><img src="./img/redes-sociales/facebook.png" alt=""></img></a>
+                    <a href="https://www.instagram.com/undergroundgaragegaby/"><img src="./img/redes-sociales/instagram.png" alt=""></img></a>
+                    <a href=" https://api.whatsapp.com/send?phone=34644640264"><img src="./img/redes-sociales/whatsapp.png" alt=""></img></a>
+                    <a href=""><img src="./img/redes-sociales/youtube.png" alt=""></img></a>
+                    
+                </p>
+            </div>
+            <div id="autor">
+                <h5>Autor</h5>
+                <p>Copyright &copy; Jose Manuel Rueda</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN DEL FOOTER -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05ST44EKLR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-05ST44EKLR');
+    </script>
+
+    <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/css/bootstrap.min.css"></script>
 </body>
+
 </html>
