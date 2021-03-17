@@ -41,10 +41,6 @@ body {
   height: auto;
 }
 
-.ancho {
-  width: 50% !important;
-}
-
 .wrap {
   text-decoration: none !important;
   width: 1250px;
@@ -679,6 +675,7 @@ body {
 header {
   background-color: black;
   position: fixed;
+  height: 65px;
   margin-top: -80px;
   width: 100%;
   z-index: 10;
@@ -731,10 +728,10 @@ header {
   top: 0.6rem;
 }
 
-.menu {
+.menu2 {
   background: #d1d1d1;
   width: 100%;
-  height: 16rem;
+  height: 13rem;
   position: fixed;
   z-index: 9;
   top: -19rem;
@@ -742,14 +739,51 @@ header {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 6rem;
+  transition: all 0.5s;
+}
+.menu2 ul {
+  list-style: none;
+}
+.menu2 ul li {
+  margin-bottom: 0rem !important;
+}
+.menu2 ul li a {
+  font-size: 20px;
+  margin: 0.1rem;
+  color: #000;
+  text-decoration: none;
+}
+.menu2 ul li:hover {
+  color: #2566aa;
+  font-weight: bold;
+  transform: scale(1.4);
+}
+.menu2 ul li:hover a {
+  color: #2566aa;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px #3570af;
+}
+
+.menu {
+  background: #d1d1d1;
+  width: 100%;
+  height: 13rem;
+  position: fixed;
+  z-index: 9;
+  top: -19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 6rem;
   transition: all 0.5s;
 }
 .menu ul {
   list-style: none;
 }
 .menu ul li {
-  margin: 0.5rem;
+  margin-bottom: 0rem !important;
 }
 .menu ul li a {
   font-size: 20px;
@@ -770,6 +804,10 @@ header {
 
 .checkbox:checked ~ .menu {
   top: 0rem;
+}
+
+.checkbox:checked ~ .menu2 {
+  top: -2rem;
 }
 
 .checkbox:checked + header .header-container label .header-button {
@@ -828,7 +866,7 @@ header {
 
 @media (max-width: 1250px) {
   .wrap {
-    width: 100%;
+    width: 90% !important;
   }
 
   /* #card{
