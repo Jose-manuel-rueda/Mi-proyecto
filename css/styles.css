@@ -697,6 +697,7 @@ header {
 .btn-label {
   width: 2rem;
   height: 1.4rem;
+  cursor: pointer;
 }
 
 #menu2 {
@@ -836,22 +837,19 @@ header {
   width: 100%;
   margin: 0px auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 3fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr repeat(2, 1fr);
+  row-gap: 20px;
 }
 #c3 img {
-  width: 95%;
-  height: 220px;
+  width: 90%;
   border-radius: 20px;
-}
-#c3 img:hover {
-  transform: scale(2);
 }
 #c3 h4 {
   text-align: center;
   margin: 20px;
   font-weight: bold;
-  grid-column: 1/6;
+  grid-column: 1/4;
 }
 #c3 h4 p {
   text-align: start;
